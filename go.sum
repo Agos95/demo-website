@@ -1,0 +1,14 @@
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/better-table v0.0.0-20220820110306-331dd791f596 h1:JSJFRUjUWxkmfsZwY8+kkuoovG9Y1tHSZImIpDBOggw=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/better-table v0.0.0-20220820110306-331dd791f596/go.mod h1:fD3WxtbkHL//PXKQvQr/JWEvT2Z7xyah7E+xp8e8+gM=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820110306-331dd791f596 h1:Zy/Tgwp7lgFo3PdzbGCtCpJbWfIeR4n7ZKI8dfROlCs=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820110306-331dd791f596/go.mod h1:tpJlqwwLJE7mQaUsBNhUxNZLfxUXuLxq6a3FUH12fiI=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820161152-fa865f261c4f h1:9FjtPSTK9/OIivOjgaJUMMZDMjCV8DVja+AOJO3qVBs=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820161152-fa865f261c4f/go.mod h1:tpJlqwwLJE7mQaUsBNhUxNZLfxUXuLxq6a3FUH12fiI=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820161609-3537320c2f23 h1:UUOYcXqAA4KrmQGbSKVCLCVenlIYvZOwv9Qnv33UhGU=
+github.com/Agos95/wowchemy-shortcode-collection/shortcodes/gallery-with-caption v0.0.0-20220820161609-3537320c2f23/go.mod h1:tpJlqwwLJE7mQaUsBNhUxNZLfxUXuLxq6a3FUH12fiI=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify v1.0.0 h1:blRMoXNtlxnqXlVi4eCdPtTfVpJkH9J1f6tEKDXimCY=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify v1.0.0/go.mod h1:s40UgLsWfVyCLQ2F4F3dBcNfZOXcPGld7KxsKhZdzvM=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms v1.0.0 h1:WCbC3jjXAcFGUWn5W1QUk5tzNq4x4NcyqABI/s0SnWw=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms v1.0.0/go.mod h1:X1mETJo6Lkv9tEgfU0UYFRiRInf0RbgW+s1RKXB4GMA=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5 v5.6.0 h1:l7FIPHFJ8KKktS8Nrfk/u47PkDTbg6TNHg4VY3g41Xc=
+github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5 v5.6.0/go.mod h1:EfRfz/zhkliLPRWYdXRatho64juF3EFaJnciCi5YzwA=
