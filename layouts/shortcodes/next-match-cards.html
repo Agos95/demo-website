@@ -1,0 +1,21 @@
+{{ $src := .Get "path" }}
+{{ $is_remote := strings.HasPrefix $src "http" }}
+{{ if not $is_remote }}
+    {{ $src = path.Join "content" $.Page.File.Dir $src }}
+{{ end }}
+{{ $json := getJSON $src }}
+
+<!-- https://getbootstrap.com/docs/4.6/components/card/ -->
+<div class="row">
+    {{ range $json }}
+        {{ $title := printf "%s vs %s" .locali .ospiti }}
+        {{ $footer := printf "%s, ore %s | %s" .data .ora .palestra}}
+        <div class="col-4">
+            <div class="card text-center">
+                <h5 class="card-header">{{ $title }}</h5>
+                <div class="card-footer">{{ $footer }}</div>
+            </div>
+
+        </div>
+    {{ end }}
+</div>

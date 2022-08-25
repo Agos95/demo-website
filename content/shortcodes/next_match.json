@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "locali": "Arcella",
+        "ospiti": "USMA",
+        "data": "22 Ott",
+        "ora": "21:00",
+        "palestra": "Barion"
+    },
+    {
+        "id": 2,
+        "locali": "Arcella",
+        "ospiti": "USMA",
+        "data": "22 Ott",
+        "ora": "21:00",
+        "palestra": "Barion"
+    },
+    {
+        "id": 3,
+        "locali": "Arcella",
+        "ospiti": "USMA",
+        "data": "22 Ott",
+        "ora": "21:00",
+        "palestra": "Barion"
+    },
+    {
+        "id": 4,
+        "locali": "Arcella",
+        "ospiti": "USMA",
+        "data": "22 Ott",
+        "ora": "21:00",
+        "palestra": "Barion"
+    }
+]
