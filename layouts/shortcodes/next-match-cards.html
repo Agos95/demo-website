@@ -9,16 +9,21 @@
 <div class="container">
     <div class="row justify-content-center">
         {{ range $json }}
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="card text-center">
-                    <div class="card-header"> {{ printf "%s | %s" .data .ora | markdownify}} </div>
-                    <div class="card-body">
-                        <h3 class="card-title">{{ printf "<u>%s</u> vs <u>%s</u>" .locali .ospiti | markdownify }}</h3>
-                        <div class="card-subtitle text-muted">{{ printf "%s" .categoria }}</div>
+                    <div class="card-header"> {{ printf "%s | %s" .data .ora | markdownify | emojify }} </div>
+                    <div class="row no-gutters align-items-center justify-content-center">
+                        {{ if not (eq .img_locali nil | or (eq .img_ospiti nil)) }}
+                            <div class="col-2 order-first"><img src={{printf "%s" .img_locali}}></div>
+                            <div class="col-2 order-last"><img src={{printf "%s" .img_ospiti}}></div>
+                        {{ end }}
+                        <div class="col-7 card-body">
+                            <h3 class="card-title">{{ printf "<u>**%s**</u> vs <u>%s</u>" .locali .ospiti | markdownify | emojify }}</h3>
+                            <div class="card-subtitle text-muted">{{ printf "%s" .categoria | markdownify | emojify }}</div>
+                        </div>                 
                     </div>
-                    <div class="card-footer">{{ printf "%s" .palestra | markdownify }}</div>
+                    <div class="card-footer">{{ printf "%s" .palestra | markdownify | emojify }}</div>
                 </div>
-
             </div>
         {{ end }}
     </div>
