@@ -6,16 +6,20 @@
 {{ $json := getJSON $src }}
 
 <!-- https://getbootstrap.com/docs/4.6/components/card/ -->
-<div class="row">
-    {{ range $json }}
-        {{ $title := printf "%s vs %s" .locali .ospiti }}
-        {{ $footer := printf "%s, ore %s | %s" .data .ora .palestra}}
-        <div class="col-4">
-            <div class="card text-center">
-                <h5 class="card-header">{{ $title }}</h5>
-                <div class="card-footer">{{ $footer }}</div>
-            </div>
+<div class="container">
+    <div class="row justify-content-center">
+        {{ range $json }}
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header"> {{ printf "%s | %s" .data .ora | markdownify}} </div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{ printf "<u>%s</u> vs <u>%s</u>" .locali .ospiti | markdownify }}</h3>
+                        <div class="card-subtitle text-muted">{{ printf "%s" .categoria }}</div>
+                    </div>
+                    <div class="card-footer">{{ printf "%s" .palestra | markdownify }}</div>
+                </div>
 
-        </div>
-    {{ end }}
+            </div>
+        {{ end }}
+    </div>
 </div>

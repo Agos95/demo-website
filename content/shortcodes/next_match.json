@@ -5,7 +5,8 @@
         "ospiti": "USMA",
         "data": "22 Ott",
         "ora": "21:00",
-        "palestra": "Barion"
+        "palestra": "Barion",
+        "categoria": "Promo"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "ospiti": "USMA",
         "data": "22 Ott",
         "ora": "21:00",
-        "palestra": "Barion"
+        "palestra": "Barion",
+        "categoria": "Promo"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "ospiti": "USMA",
         "data": "22 Ott",
         "ora": "21:00",
-        "palestra": "Barion"
+        "palestra": "Barion",
+        "categoria": "Promo"
     },
     {
         "id": 4,
@@ -29,6 +32,7 @@
         "ospiti": "USMA",
         "data": "22 Ott",
         "ora": "21:00",
-        "palestra": "Barion"
+        "palestra": "Barion",
+        "categoria": "Promo"
     }
 ]
