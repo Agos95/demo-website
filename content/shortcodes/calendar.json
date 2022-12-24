@@ -1,0 +1,142 @@
+[
+    {
+        "Data": "14/10/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Noventa",
+        "ptLocali": 94,
+        "ptOspiti": 49,
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palestra Comunale",
+        "gmap": "https://maps.google.com?q=+Via+XXV+Aprile"
+    },
+    {
+        "Data": "21/10/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": 55,
+        "ptOspiti": 76,
+        "Ospiti": "Dolo Dolphins",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "28/10/2022",
+        "Ora": "21:00",
+        "Locali": "Selvazzano Basket",
+        "ptLocali": "59*",
+        "ptOspiti": "63*",
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palasport 'A. Ceron'",
+        "gmap": "https://maps.google.com?q=+Via+Euganea"
+    },
+    {
+        "Data": "04/11/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": "50*",
+        "ptOspiti": "56*",
+        "Ospiti": "USMA Caselle",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "10/11/2022",
+        "Ora": "21:15",
+        "Locali": "Don Bosco Arcobaleno",
+        "ptLocali": 55,
+        "ptOspiti": 50,
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "[Palasport 'Don Bosco'",
+        "gmap": "https://maps.google.com?q=+Via+Forcellini+PADOVA+PD)"
+    },
+    {
+        "Data": "18/11/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": 61,
+        "ptOspiti": 74,
+        "Ospiti": "Virtus Cave",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "25/11/2022",
+        "Ora": "21:15",
+        "Locali": "Atletico Modigliani",
+        "ptLocali": 55,
+        "ptOspiti": 54,
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palestra Ist. 'Modigliani'",
+        "gmap": "https://maps.google.com?q=+Via+Bassi"
+    },
+    {
+        "Data": "02/12/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": 47,
+        "ptOspiti": 65,
+        "Ospiti": "Pallacanestro Noventa",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "16/12/2022",
+        "Ora": "20:45",
+        "Locali": "Dolo Dolphins",
+        "ptLocali": 76,
+        "ptOspiti": 59,
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palestra Ist. 'G. Galilei'",
+        "gmap": "https://maps.google.com?q=+Via+C.+Frasio"
+    },
+    {
+        "Data": "23/12/2022",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": 60,
+        "ptOspiti": 66,
+        "Ospiti": "Selvazzano Basket",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "27/01/2023",
+        "Ora": "21:15",
+        "Locali": "USMA Caselle",
+        "ptLocali": "",
+        "ptOspiti": "",
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palestra Kolbe",
+        "gmap": "https://maps.google.com?q=+Via+Ceresina+13+'Loc.+Caselle'+SELVAZZANO+DENTRO+PD"
+    },
+    {
+        "Data": "01/02/2023",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": "",
+        "ptOspiti": "",
+        "Ospiti": "Don Bosco Arcobaleno",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    },
+    {
+        "Data": "10/02/2023",
+        "Ora": "21:30",
+        "Locali": "Virtus Cave",
+        "ptLocali": "",
+        "ptOspiti": "",
+        "Ospiti": "Pallacanestro Arcella",
+        "Palestra": "Palestra Comunale",
+        "gmap": "https://maps.google.com?q=+Via+Rovigo"
+    },
+    {
+        "Data": "15/02/2023",
+        "Ora": "21:15",
+        "Locali": "Pallacanestro Arcella",
+        "ptLocali": "",
+        "ptOspiti": "",
+        "Ospiti": "Atletico Modigliani",
+        "Palestra": "Palestra L. P. Barion",
+        "gmap": "https://maps.google.com?q=+Via+L.+Bressan"
+    }
+]
