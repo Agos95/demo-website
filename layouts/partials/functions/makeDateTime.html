@@ -1,0 +1,24 @@
+{{/*
+    Join date and time strings and convert them to `time.Time` structure.
+
+    Usage
+    -----
+        partial makeDateTime (dict "date" DATE "time" TIME "tz" TZ)
+
+    Inputs
+        date : date in format YYYY-MM-DD
+        time : time in format HH:MM[:SS], default ""
+        tz   : time zone, default "Europe/Rome"
+*/}}
+
+{{ $date := .date}}
+
+{{ $time := .time | default "" }}
+{{/* Add seconds to time if not present */}}
+{{ if eq (strings.Count ":" $time ) 1 }} {{ $time = (printf "%s:00" $time) }} {{ end }}
+
+{{ $tz := .tz | default "Europe/Rome" }}
+
+{{ $datetime := (time (printf "%s %s" $date $time) $tz)}}
+
+{{ return $datetime }}

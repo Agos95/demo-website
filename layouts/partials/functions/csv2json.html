@@ -1,0 +1,53 @@
+{{/*
+    Read a csv file and return it as json.
+    First line on the csv is assumed to be the header,
+    and the columns names will be the keys for the json file.
+
+    Usage
+    -----
+        partial "functions/csv2json" (dict
+            "context" .
+            "path" PATH
+            "delimiter" DELIMITER
+        )
+
+    Inputs
+    ------
+    context : page context
+    path : path to the csv file (local or remote)
+    delimiter : delimiter in the csv
+
+    Outputs
+    -------
+    Json representation of the csv, which is a slice of maps (one per row)
+
+*/}}
+
+<!--unformattedContent-->
+{{ $src := .path }}
+{{ $delimiter := .delimiter | default "," }}
+{{ $is_remote := strings.HasPrefix $src "http" }}
+{{ if not $is_remote }}
+    {{ $src = path.Join "content" .context.Page.File.Dir $src }}
+{{ end }}
+{{ $csv := getCSV $delimiter $src }}
+
+{{/* get json keys from header */}}
+{{ $keys := index $csv 0 }}
+{{ $csv = after 1 $csv }}
+
+{{ $json := slice }}
+
+{{ range $row := $csv }}
+    {{ $json_row := newScratch }}
+    {{ range $index, $val := . }}
+        {{ $key := index $keys $index }}
+        {{ $json_row.SetInMap "row" (index $keys $index) $val }}
+    {{ end }}
+    {{ $json_row = $json_row.Get "row"}}
+    {{ $json = $json | append $json_row }}
+{{ end }}
+
+{{ return $json }}
+
+<!--unformattedContent-->

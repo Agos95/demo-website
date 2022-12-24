@@ -1,38 +1,15 @@
 <!--unformattedContent-->
-{{ $src := .Get "path" }}
-{{ $delimiter := .Get "delimiter" | default "," }}
-{{ $useHeaderRow := (eq (lower (.Get "header")) "true") | default true }}
-{{ $caption := .Get "caption" }}
-{{ $is_remote := strings.HasPrefix $src "http" }}
-{{ if not $is_remote }}
-    {{ $src = path.Join "content" $.Page.File.Dir $src }}
-{{ end }}
-{{ $rows := getCSV $delimiter $src }}
+{{ $calendar := partial "functions/csv2json"
+    (dict "context" . "path" (.Get "path") "delimiter" (.Get "delimiter"))
+}}
 
-{{ $calendar := slice }}
+{{ $tmp := index $calendar 0 }}
+{{ $tmp = merge $tmp (
+    dict "DataOra" (
+        partial "functions/makeDateTime" (dict "date" $tmp.Data "time" $tmp.Ora)
+    )
+) }}
 
-{{/*get header row*/}}
-{{ $header := index $rows 0 }}
-{{ $rows = after 1 $rows }}
-
-{{ range $rows }}
-    {{ $event := newScratch }}
-    {{ range $index, $val := . }}
-        {{$key := index $header $index}}
-        {{ if eq $key "Data" }} {{$val = (time $val "Europe/Rome")}} {{ end }}
-        {{ $event.SetInMap "event" (index $header $index) $val }}
-    {{ end }}
-    {{$event = $event.Get "event"}}
-    {{ $calendar = $calendar | append $event }}
-{{ end }}
-
-{{ range $event := $calendar }}
-    {{printf "%#v" (gt $event.Data now)}} <br>
-{{ end }}
-
-{{ $next := where $calendar ".Data" "gt" now }}
-{{ range $next }}
-    {{printf "%#v" .}}<br><br>
-{{ end }}
+{{ printf "%#v" $tmp}}
 
 <!--unformattedContent-->
